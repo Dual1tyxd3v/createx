@@ -12,28 +12,38 @@
 
 <body>
   <header class="header">
-    <div class="wrapper header__wrapper">
-      <a href="/" class="logo">
-        <img src="./img/logo.png" alt="Logo">
-      </a>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a href="about.html" class="nav__item">About us</a></li>
-          <li><a href="#" class="nav__item">Services</a></li>
-          <li><a href="#" class="nav__item">Work</a></li>
-          <li><a href="#" class="nav__item">News</a></li>
+    <div class="wrapper">
+      <div class="header__wrapper">
+        <a href="/" class="logo header__logo">
+          <img src="./img/logo.png" alt="Logo">
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li><a href="about.html" class="nav__item">About us</a></li>
+            <li><a href="#" class="nav__item">Services</a></li>
+            <li><a href="#" class="nav__item">Work</a></li>
+            <li><a href="#" class="nav__item">News</a></li>
+          </ul>
+        </nav>
+        <ul class="nav__actions">
+          <li>
+            <a href="#" class="nav__action nav__action--tel">
+              <div>
+                <p class="nav__action--name">Call us</p>
+                <p class="nav__action--contacts">(405) 555-0128</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav__action nav__action--email">
+              <div>
+                <p class="nav__action--name">Talk to us</p>
+                <p class="nav__action--contacts">hello@createx.com</p>
+              </div>
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul class="nav__action">
-        <li class="nav__action-item nav__action-item--cal">
-          <p class="nav__action-name"></p>
-          <a href="" class="nav__link"></a>
-        </li>
-        <li class="nav__action-item nav__action-item--talk">
-          <p class="nav__action-name"></p>
-          <a href="" class="nav__link"></a>
-        </li>
-      </ul>
+      </div>
     </div>
   </header>
   <script src="./js/script.js"></script>

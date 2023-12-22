@@ -25,6 +25,7 @@ html {
 
 body {
   font-family: "Ubuntu";
+  font-weight: 400;
 }
 
 ul {
@@ -33,6 +34,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -61,7 +63,73 @@ img {
   width: 13rem;
 }
 
+.header {
+  padding: 2.2rem 0;
+}
 .header__wrapper {
   display: flex;
+  align-items: center;
+  width: 100%;
+}
+.header__logo {
+  margin-right: 6rem;
+}
+
+.nav__list {
+  display: flex;
+}
+.nav__list li:not(:last-child) {
+  margin-right: 4rem;
+}
+.nav__item {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 2.5rem;
+}
+.nav__item--active {
+  color: #ff5a30;
+}
+.nav__item:hover {
+  text-decoration: underline;
+}
+.nav__actions {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.nav__actions li:not(:last-child) {
+  margin-right: 3.6rem;
+}
+.nav__action {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+.nav__action:hover {
+  transform: scaleX(1.05);
+}
+.nav__action::before {
+  content: "";
+  display: block;
+  margin-right: 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  background-position: center top;
+  background-size: 4rem 4rem;
+}
+.nav__action--tel {
+  background-image: url(../img/header--tel.svg);
+}
+.nav__action--email {
+  background-image: url(../img/header--email.svg);
+}
+.nav__action--name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+}
+.nav__action--contacts {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
 }
 /*# sourceMappingURL=style.css.map */
