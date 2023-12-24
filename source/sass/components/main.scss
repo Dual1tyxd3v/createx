@@ -17,6 +17,8 @@
 
   &__slider-wrapper {
     margin-bottom: 18rem;
+    display: flex;
+    transition: all .4s;
   }
 
   &__header {
@@ -64,6 +66,7 @@
 
   &__slider {
     width: 57.7rem;
+    overflow: hidden;
   }
 
   &__slider-counter {

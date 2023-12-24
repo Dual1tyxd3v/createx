@@ -147,6 +147,8 @@ img {
 }
 .main__slider-wrapper {
   margin-bottom: 18rem;
+  display: flex;
+  transition: all 0.4s;
 }
 .main__header {
   font-size: 7.2rem;
@@ -186,6 +188,7 @@ img {
 }
 .main__slider {
   width: 57.7rem;
+  overflow: hidden;
 }
 .main__slider-counter {
   display: flex;
