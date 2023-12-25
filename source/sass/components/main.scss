@@ -13,6 +13,7 @@
 
   &__slide {
     width: 57.7rem;
+    min-width: 57.7rem;
   }
 
   &__slider-wrapper {
@@ -101,15 +102,7 @@
   }
 
   &__slider-btn {
-    width: 4.8rem;
-    height: 4.8rem;
-    border: none;
     background-color: rgba(#fff, 0.5);
-    transition: all 0.2s;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.6rem;
-    -webkit-text-stroke-width: thick;
 
     &:hover {
       background-color: #fff;

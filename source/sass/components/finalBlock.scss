@@ -1,0 +1,11 @@
+.finalBlock {
+  display: flex;
+  justify-content: center;
+
+  &__text {
+    font-size: 2.8rem;
+    line-height: 150%;
+    font-weight: 700;
+    margin-right: 4rem;
+  }
+}

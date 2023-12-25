@@ -83,6 +83,36 @@ img {
   background-color: #FC3300;
 }
 
+.slider-btn {
+  width: 4.8rem;
+  height: 4.8rem;
+  border: none;
+  transition: all 0.2s;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.6rem;
+  -webkit-text-stroke-width: thick;
+}
+
+.outline-btn {
+  cursor: pointer;
+  border: 1px solid #ff5a30;
+  border-radius: 4px;
+  color: #ff5a30;
+  letter-spacing: 0.5px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 1.5rem 3.2rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+.outline-btn:hover {
+  background-color: #ff5a30;
+  color: #fff;
+}
+
 .logo {
   display: inline-block;
   width: 13rem;
@@ -170,6 +200,7 @@ img {
 }
 .main__slide {
   width: 57.7rem;
+  min-width: 57.7rem;
 }
 .main__slider-wrapper {
   margin-bottom: 18rem;
@@ -243,15 +274,7 @@ img {
   justify-content: space-between;
 }
 .main__slider-btn {
-  width: 4.8rem;
-  height: 4.8rem;
-  border: none;
   background-color: rgba(255, 255, 255, 0.5);
-  transition: all 0.2s;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 1.6rem;
-  -webkit-text-stroke-width: thick;
 }
 .main__slider-btn:hover {
   background-color: #fff;
@@ -425,9 +448,19 @@ img {
   width: 41.4rem;
 }
 
+.finalBlock {
+  display: flex;
+  justify-content: center;
+}
+.finalBlock__text {
+  font-size: 2.8rem;
+  line-height: 150%;
+  font-weight: 700;
+  margin-right: 4rem;
+}
+
 .services {
   margin-top: -9.2rem;
-  background-color: #f4f5f6;
   background-image: url(../img/services--bg.jpg);
   background-size: cover;
   padding-top: 21.2rem;
@@ -446,16 +479,6 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8.5rem;
-}
-.services__offer {
-  display: flex;
-  justify-content: center;
-}
-.services__text {
-  font-size: 2.8rem;
-  line-height: 150%;
-  font-weight: 700;
-  margin-right: 4rem;
 }
 
 .service {
@@ -489,5 +512,76 @@ img {
   width: 5.2rem;
   height: 5.2rem;
   margin-bottom: 2.4rem;
+}
+
+.projects {
+  padding: 12rem 0;
+}
+.projects__slider {
+  overflow: hidden;
+  padding-bottom: 8rem;
+}
+.projects__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 6rem;
+}
+.projects__slider-btn {
+  background-color: transparent;
+}
+.projects__slider-btn:hover {
+  background-color: #ff5a30;
+  color: #fff;
+}
+.projects__slider-wrapper {
+  display: flex;
+  gap: 3rem;
+  transition: all 0.2s;
+}
+
+.project {
+  width: 39rem;
+  min-width: 39rem;
+  height: 41.6rem;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+.project:hover {
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+}
+.project:hover .project__btn {
+  display: inline;
+}
+.project:hover .project__description {
+  margin-bottom: 2.4rem;
+}
+.project__info {
+  padding: 1.6rem 0 2.4rem;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.project__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 0.4rem;
+}
+.project__description {
+  line-height: 150%;
+  font-size: 1.4rem;
+}
+.project__btn {
+  display: none;
+}
+.project__img {
+  height: 34.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

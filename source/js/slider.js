@@ -1,12 +1,14 @@
 const SLIDER_DELAY = 3000;
 
 class Slider {
-  constructor(sliderContainer, sliderWrapper, rightBtn, leftBtn, sliderCounter = null) {
+  constructor(slidesGap, sliderWrapper, slidesPerTime, rightBtn, leftBtn, sliderCounter = null) {
     this.currentSlide = 0;
-    this.slideWidth = sliderContainer.clientWidth;
+    this.slidesGap = slidesGap;
+    this.slideWidth = sliderWrapper.querySelector('.js-slide').clientWidth;
     this.slidesCount = sliderWrapper.querySelectorAll('.js-slide').length - 1;
+    this.slidesPetTime = slidesPerTime - 1;
     this.wrapper = sliderWrapper;
-    this.wrapper.style.width = `${this.slideWidth * (this.slidesCount + 1)}px`;
+    this.wrapper.style.width = `${this.slideWidth * (this.slidesCount + 1) + this.slidesGap * this.slidesCount}px`;
     this.timer = setInterval(() => this._changeSlide(1), SLIDER_DELAY);
     this.sliderCounter = sliderCounter;
 
@@ -26,14 +28,16 @@ class Slider {
     }
 
     this.currentSlide += direction;
-    if (this.currentSlide > this.slidesCount) {
+    if (this.currentSlide > (this.slidesCount - this.slidesPetTime)) {
       this.currentSlide = 0;
     }
     if (this.currentSlide < 0) {
-      this.currentSlide = this.slidesCount;
+      this.currentSlide = (this.slidesCount - this.slidesPetTime);
     }
 
-    this.wrapper.style.transform = `translateX(-${this.currentSlide * this.slideWidth}px)`;
+    const offset = (this.currentSlide * this.slideWidth) + (this.slidesGap * this.currentSlide);
+
+    this.wrapper.style.transform = `translateX(-${offset}px)`;
 
     if (this.sliderCounter) {
       const { container, className } = this.sliderCounter;
