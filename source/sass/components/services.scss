@@ -1,0 +1,38 @@
+.services {
+  margin-top: -9.2rem;
+  background-color: #f4f5f6;
+  background-image: url(../img/services--bg.jpg);
+  background-size: cover;
+  padding-top: 21.2rem;
+  padding-bottom: 8.5rem;
+
+  &__wrapper {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 2.4rem;
+  }
+
+  &__description {
+    margin-bottom: 6rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8.5rem;
+  }
+
+  &__offer {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    font-size: 2.8rem;
+    line-height: 150%;
+    font-weight: 700;
+    margin-right: 4rem;
+  }
+}
