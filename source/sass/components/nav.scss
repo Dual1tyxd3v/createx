@@ -18,7 +18,7 @@
     }
 
     &:hover {
-      border-bottom: 2px solid $color-active;
+      color: $color-active;
     }
   }
 
@@ -37,7 +37,9 @@
     transition: all .2s;
 
     &:hover {
-      transform: scaleX(1.05);
+      .nav__action--contacts {
+        color: $color-active;
+      }
     }
 
     &::before {

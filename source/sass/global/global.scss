@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   box-sizing: border-box;
   font-style: normal;
+  transition: all 0.3s;
 }
 
 html {
@@ -17,7 +18,7 @@ body {
   font-weight: 400;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -39,5 +40,5 @@ img {
   padding: 0;
   border: none;
   position: absolute;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
 }

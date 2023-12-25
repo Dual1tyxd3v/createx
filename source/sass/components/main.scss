@@ -1,8 +1,5 @@
 .main {
   &__main {
-    background-image: url(../img/main-bg.jpg);
-    background-size: cover;
-    padding-top: 22rem;
     height: 98.8rem;
     position: relative;
   }
@@ -12,14 +9,21 @@
   }
 
   &__slide {
+    width: 100vw;
+    padding-top: 22rem;
+    min-width: 100vw;
+    background-image: url(../img/main-bg.jpg);
+    background-size: cover;
+  }
+
+  &__slide-wrapper {
     width: 57.7rem;
-    min-width: 57.7rem;
   }
 
   &__slider-wrapper {
-    margin-bottom: 18rem;
+    height: 100%;
     display: flex;
-    transition: all .4s;
+    transition: transform 1s cubic-bezier(0.33, 1, 0.68, 1);
   }
 
   &__header {
@@ -66,20 +70,33 @@
   }
 
   &__slider {
-    width: 57.7rem;
+    width: 100vw;
+    height: 100%;
     overflow: hidden;
   }
 
   &__slider-counter {
     display: flex;
     color: rgba(#fff, 0.3);
+
+    &-wrapper {
+      position: absolute;
+      left: 0;
+      bottom: 12rem;
+      z-index: 3;
+      width: 100%;
+    }
   }
 
   &__slider-count {
     width: 17.8rem;
-    border-bottom: 2px solid rgba(#fff, 0.3);
+    background-image: linear-gradient(to right, #fff , #fff 50%, rgba(#fff, 0.3) 50%, rgba(#fff, 0.3) 100%);
+    background-size: 200% 2px;
+    background-position-y: bottom;
+    background-position-x: right;
     font-size: 2.8rem;
     padding: 0.7rem 0;
+    transition: all 1s;
 
     &:not(:last-child) {
       margin-right: 0.4rem;
@@ -87,7 +104,7 @@
 
     &--active {
       color: #fff;
-      border-bottom: 2px solid #fff;
+      background-position-x: left;
     }
   }
 
