@@ -435,7 +435,7 @@ img {
 .form__form {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
 }
 .form__field {
   display: flex;
@@ -568,7 +568,7 @@ img {
 .projects__head {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 6rem;
 }
 .projects__slider-btn {
@@ -647,7 +647,7 @@ img {
 }
 .partners__content {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
 }
 .partners__slider {
   width: 60rem;
@@ -739,5 +739,86 @@ img {
 .facts__text {
   font-size: 1.4rem;
   line-height: 150%;
+}
+
+.news {
+  padding-bottom: 12.5rem;
+}
+.news__wrapper {
+  width: 126rem;
+  padding: 0 1.5rem;
+}
+.news__title {
+  margin-bottom: 6rem;
+  text-align: center;
+}
+.news__content {
+  display: flex;
+  margin-bottom: 8rem;
+}
+.news__big {
+  width: 70.5rem;
+  margin-right: 3rem;
+}
+.news__big .news__info-block {
+  margin-bottom: 1.6rem;
+}
+.news__small .news__item {
+  margin-bottom: 3rem;
+}
+.news__container {
+  padding: 0 2.4rem 2.4rem;
+}
+.news__container--big {
+  padding-top: 2.4rem;
+}
+.news__container--small {
+  padding-top: 1.6rem;
+}
+.news__item {
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+.news__head {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 150%;
+}
+.news__head--big {
+  margin-bottom: 1.2rem;
+}
+.news__head--small {
+  margin-bottom: 0.8rem;
+}
+.news__info-block {
+  display: flex;
+}
+.news__info {
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #787a80;
+}
+.news__info:not(:last-child) {
+  border-right: 1px solid #787a80;
+  padding-right: 1.2rem;
+}
+.news__info:not(:first-child) {
+  padding-left: 1.2rem;
+}
+.news__info--comments {
+  display: flex;
+  align-items: center;
+}
+.news__info--comments::before {
+  content: "";
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.8rem;
+  background-image: url(../img/news--comments.svg);
+}
+.news__text {
+  font-size: 1.6rem;
+  line-height: 160%;
 }
 /*# sourceMappingURL=style.css.map */
