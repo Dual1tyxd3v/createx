@@ -1,7 +1,7 @@
 const SLIDER_DELAY = 3000;
 
 class Slider {
-  constructor(slidesGap, sliderWrapper, slidesPerTime, rightBtn, leftBtn, sliderCounter = null) {
+  constructor({ slidesGap, sliderWrapper, slidesPerTime, rightBtn, leftBtn, sliderCounter, needTimer }) {
     this.currentSlide = 0;
     this.slidesGap = slidesGap;
     this.slideWidth = sliderWrapper.querySelector('.js-slide').clientWidth;
@@ -9,7 +9,7 @@ class Slider {
     this.slidesPetTime = slidesPerTime - 1;
     this.wrapper = sliderWrapper;
     this.wrapper.style.width = `${this.slideWidth * (this.slidesCount + 1) + this.slidesGap * this.slidesCount}px`;
-    this.timer = setInterval(() => this._changeSlide(1), SLIDER_DELAY);
+    this.timer = needTimer ? setInterval(() => this._changeSlide(1), SLIDER_DELAY) : null;
     this.sliderCounter = sliderCounter;
 
     if (rightBtn && leftBtn) {

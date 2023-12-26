@@ -1,0 +1,91 @@
+.partners {
+  background-color: #f4f5f6;
+  padding-top: 8rem;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 3.2rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15.2rem;
+  }
+
+  &__partner {
+    width: 17.4rem;
+  }
+
+  &__content {
+    display: flex;
+    align-items:start;
+  }
+
+  &__slider {
+    width: 60rem;
+    min-width: 60rem;
+    text-align: left;
+    position: relative;
+    margin-right: 13.5rem;
+    overflow: hidden;
+  }
+
+  &__slider-wrapper {
+    display: flex;
+  }
+
+  &__slider-btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__slider-btn {
+    background-color: transparent;
+
+    &:hover {
+      background-color: $color-active;
+      color: #fff;
+    }
+  }
+
+  &__slide {
+    min-width: 60rem;
+  }
+
+  &__slide-title {
+    margin-bottom: 6rem;
+  }
+
+  &__avatar {
+    width: 7.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2.4rem;
+  }
+
+  &__description {
+    font-size: 1.6rem;
+    line-height: 160%;
+    margin-bottom: 2.4rem;
+    color: #424551;
+  }
+
+  &__name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 160%;
+    margin-bottom: .4rem;
+  }
+
+  &__job {
+    font-size: 1.4rem;
+    color: #787A80;
+    line-height: 150%;
+  }
+
+  &__img {
+    width: 49.5rem;
+  }
+}
