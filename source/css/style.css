@@ -857,7 +857,7 @@ img {
 }
 
 .request {
-  background-image: url(../../img/request--bg.jpg);
+  background-image: url(../img/request--bg.jpg);
   background-size: cover;
 }
 .request__wrapper {
