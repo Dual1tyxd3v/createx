@@ -708,8 +708,12 @@ img {
 .facts {
   padding: 18rem 0;
   margin-top: -6rem;
-  background-color: #fff;
   text-align: center;
+}
+.facts-n-news {
+  background-image: url(../../img/facts--bg.png);
+  background-position: 0 -18rem;
+  background-color: #fff;
 }
 .facts__title {
   margin-bottom: 6rem;
