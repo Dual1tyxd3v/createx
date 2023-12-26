@@ -19,7 +19,7 @@
   &__form {
     display: flex;
     justify-content: center;
-    align-items:flex-end;
+    align-items: flex-end;
   }
 
   &__field {
@@ -38,7 +38,8 @@
     margin-bottom: 0.8rem;
   }
 
-  &__input {
+  &__input,
+  &__textarea {
     padding: 1.2rem 1.6rem;
     font-size: 1.4rem;
     line-height: 2.1rem;
@@ -46,6 +47,7 @@
     border-radius: 4px;
     width: 26rem;
     background-color: #f4f5f6;
+    resize: none;
 
     &::placeholder {
       color: #9a9ca5;
@@ -54,5 +56,34 @@
     &--long {
       width: 41.4rem;
     }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__check-label {
+    font-size: 1.4rem;
+    line-height: 150%;
+    display: flex;
+
+    &::before {
+      content: "";
+      display: block;
+      min-width: 1.6rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 4px;
+      margin-top: 0.3rem;
+      margin-right: 1.2rem;
+      border: 1px solid $color-active;
+      background-image: url(../img/form--checkbox.svg);
+      background-position: center center;
+      background-size: 1.1rem 1.2rem;
+    }
+  }
+
+  &__checkbox:checked + .form__check-label::before {
+    background-color: $color-active;
   }
 }

@@ -570,24 +570,33 @@
   </section>
   <section class="request">
     <div class="wrapper request__wrapper">
-      <div class="form">
-        <h4 class="form__title">A quick way to discuss details</h4>
-        <form action="#" class="form__form">
+      <div class="form request__content">
+        <h4 class="form__title request__title">A quick way to discuss details</h4>
+        <form action="#" class="form__form request__form">
           <div class="form__field">
-            <label class="form__label" for="request_name">Name*</label>
+            <label class="form__label request__label" for="request_name">Name*</label>
             <input class="form__input" type="text" name="name" id="request_name" placeholder="Your name">
           </div>
           <div class="form__field">
-            <label class="form__label" for="request_phone">Phone*</label>
+            <label class="form__label request__label" for="request_phone">Phone*</label>
             <input class="form__input" type="text" name="phone" id="request_phone" placeholder="Your phone number">
           </div>
           <div class="form__field">
-            <label class="form__label" for="request_email">Email</label>
+            <label class="form__label request__label" for="request_email">Email</label>
             <input class="form__input" type="text" name="name" id="request_email" placeholder="Your working email">
           </div>
           <div class="form__field">
-            <label class="form__label" for="request_message">Message*</label>
-            <textarea class="form__textarea" name="message" id="request_message" placeholder="Your message">
+            <label class="form__label request__label" for="request_message">Message*</label>
+            <textarea class="form__textarea" name="message" id="request_message" placeholder="Your message"></textarea>
+          </div>
+          <div class="form__field">
+            <input class="form__checkbox" type="checkbox" name="checkbox" id="checkbox" checked>
+            <label for="checkbox" class="form__check-label">
+              I agree to receive communications from Createx Construction Bureau.
+            </label>
+          </div>
+          <div class="form__field request__field">
+            <input type="submit" value="Send request" class="button">
           </div>
         </form>
       </div>

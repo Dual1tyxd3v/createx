@@ -450,7 +450,7 @@ img {
   line-height: 2.1rem;
   margin-bottom: 0.8rem;
 }
-.form__input {
+.form__input, .form__textarea {
   padding: 1.2rem 1.6rem;
   font-size: 1.4rem;
   line-height: 2.1rem;
@@ -458,15 +458,41 @@ img {
   border-radius: 4px;
   width: 26rem;
   background-color: #f4f5f6;
+  resize: none;
 }
-.form__input::-moz-placeholder {
+.form__input::-moz-placeholder, .form__textarea::-moz-placeholder {
   color: #9a9ca5;
 }
-.form__input::placeholder {
+.form__input::placeholder, .form__textarea::placeholder {
   color: #9a9ca5;
 }
-.form__input--long {
+.form__input--long, .form__textarea--long {
   width: 41.4rem;
+}
+.form__checkbox {
+  display: none;
+}
+.form__check-label {
+  font-size: 1.4rem;
+  line-height: 150%;
+  display: flex;
+}
+.form__check-label::before {
+  content: "";
+  display: block;
+  min-width: 1.6rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 4px;
+  margin-top: 0.3rem;
+  margin-right: 1.2rem;
+  border: 1px solid #ff5a30;
+  background-image: url(../img/form--checkbox.svg);
+  background-position: center center;
+  background-size: 1.1rem 1.2rem;
+}
+.form__checkbox:checked + .form__check-label::before {
+  background-color: #ff5a30;
 }
 
 .finalBlock {
@@ -824,5 +850,43 @@ img {
 .news__text {
   font-size: 1.6rem;
   line-height: 160%;
+}
+
+.request {
+  background-image: url(../../img/request--bg.jpg);
+  background-size: cover;
+}
+.request__wrapper {
+  padding: 8rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.request__content {
+  padding: 4.8rem 4rem;
+}
+.request__field {
+  align-items: center;
+  margin-top: 0.4rem;
+}
+.request__form {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.request__form .form__field {
+  margin-right: 0;
+  width: 41.5rem;
+}
+.request__form .form__field:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.request__form .form__input, .request__form .form__textarea {
+  width: 100%;
+}
+.request__title {
+  margin-bottom: 2.4rem;
+}
+.request__label {
+  margin-bottom: 0.6rem;
 }
 /*# sourceMappingURL=style.css.map */
