@@ -48,6 +48,11 @@
     width: 26rem;
     background-color: #f4f5f6;
     resize: none;
+    transition: all 0s;
+
+    &:focus {
+      outline: 2px solid $color-active;
+    }
 
     &::placeholder {
       color: #9a9ca5;
