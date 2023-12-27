@@ -1035,7 +1035,7 @@ img {
 }
 
 .subsection {
-  background-image: url(../img/s-services--bg.png);
+  background-image: url(../img/subsection-services--bg.png);
   background-color: #f4f5f6;
   background-position-x: right;
   padding: 15.2rem 0 18rem;
@@ -1063,5 +1063,41 @@ img {
   font-size: 2rem;
   line-height: 150%;
   color: #787A80;
+}
+
+.s-services {
+  padding: 12rem 0 18rem;
+}
+.s-services__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8rem;
+  align-items: center;
+}
+.s-services__item:not(:last-child) {
+  margin-bottom: 12rem;
+}
+.s-services__item--reverse .s-services__img {
+  grid-column: 2/3;
+}
+.s-services__item--reverse .s-services__info {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.s-services__img {
+  width: 57.5rem;
+}
+.s-services__title {
+  font-size: 3.2rem;
+  line-height: 150%;
+  color: #1E212C;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+.s-services__description {
+  font-size: 1.6rem;
+  line-height: 160%;
+  color: #787a80;
+  margin-bottom: 4.8rem;
 }
 /*# sourceMappingURL=style.css.map */
