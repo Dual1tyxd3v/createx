@@ -15,7 +15,7 @@
     <div class="wrapper">
       <div class="header__wrapper">
         <a href="/" class="logo header__logo">
-          <img src="./img/logo.png" alt="Logo">
+          <img loading="lazy" src="./img/logo.png" alt="Logo">
         </a>
         <nav class="header__nav nav">
           <ul class="nav__list">
@@ -54,7 +54,7 @@
         <h2 class="subsection__title">Our work</h2>
         <p class="subsection__description">
           Our portfolio represents 20 years of construction experience backed by a passion for perfect client service,
-          quality and innovations in consctuction industry.
+          quality and innovations in construction industry.
         </p>
       </div>
     </div>
@@ -64,7 +64,7 @@
     <div class="wrapper">
       <ul class="w-projects__tabs">
         <li>
-          <a href="#" class="w-projects__tab w-projects__tab--active">
+          <a href="#" class="w-projects__tab w-projects__tab--active" data-tab="all">
             <svg class="w-projects__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
               fill="none">
               <g clip-path="url(#clip0_94178_1653)">
@@ -85,18 +85,18 @@
           </a>
         </li>
         <li>
-          <a href="#" class="w-projects__tab">
+          <a href="#" class="w-projects__tab" data-tab="construction">
             <svg class="w-projects__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
               fill="none">
               <path
                 d="M46.5938 25.4062C47.3704 25.4062 48 24.7766 48 24V13.5C48 12.7234 47.3704 12.0938 46.5938 12.0938C45.6135 12.0938 26.4628 12.0938 25.4062 12.0938V3C25.4062 2.22337 24.7766 1.59375 24 1.59375H9C8.22338 1.59375 7.59375 2.22337 7.59375 3V12.0938H1.40625C0.629625 12.0938 0 12.7234 0 13.5V24C0 24.7766 0.629625 25.4062 1.40625 25.4062H7.59375V33.0938H1.40625C0.629625 33.0938 0 33.7234 0 34.5V45C0 45.7766 0.629625 46.4062 1.40625 46.4062H46.5938C47.3704 46.4062 48 45.7766 48 45V34.5C48 33.7234 47.3704 33.0938 46.5938 33.0938H40.4062V25.4062H46.5938ZM45.1875 22.5938C43.683 22.5938 34.3936 22.5938 32.9062 22.5938V14.9062H45.1875V22.5938ZM30.0938 22.5938C28.6208 22.5938 19.3889 22.5938 17.9062 22.5938V14.9062H30.0938V22.5938ZM10.4062 4.40625H22.5938V12.0938C21.1208 12.0938 11.8889 12.0938 10.4062 12.0938V4.40625ZM2.8125 22.5938V14.9062H15.0938V22.5938C13.6058 22.5938 4.31672 22.5938 2.8125 22.5938ZM10.4062 25.4062H22.5938V33.0938C21.1208 33.0938 11.8889 33.0938 10.4062 33.0938V25.4062ZM2.8125 35.9062H15.0938V43.5938H2.8125V35.9062ZM17.9062 35.9062H30.0938V43.5938H17.9062V35.9062ZM45.1875 35.9062V43.5938H32.9062V35.9062H45.1875ZM37.5938 33.0938C36.1208 33.0938 26.8889 33.0938 25.4062 33.0938V25.4062H37.5938V33.0938Z"
                 fill="#FF5A30" />
             </svg>
-            Construcion
+            Construction
           </a>
         </li>
         <li>
-          <a href="#" class="w-projects__tab w-projects__tab--dev">
+          <a href="#" class="w-projects__tab" data-tab="development">
             <svg class="w-projects__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
               fill="none">
               <path
@@ -110,7 +110,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="w-projects__tab w-projects__tab--interior">
+          <a href="#" class="w-projects__tab" data-tab="interior">
             <svg class="w-projects__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
               fill="none">
               <g clip-path="url(#clip0_94178_838)">
@@ -131,7 +131,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="w-projects__tab w-projects__tab--repairs">
+          <a href="#" class="w-projects__tab" data-tab="repairs">
             <svg class="w-projects__icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
               fill="none">
               <path
@@ -142,14 +142,145 @@
           </a>
         </li>
       </ul>
-      <div class="project">
-        <img src="./img/project--red-finger.jpg" alt="Red finger building" class="project__img">
-        <div class="project__info">
-          <h6 class="project__title">Red Finger Building</h6>
-          <p class="project__description">Buiseness centers</p>
-          <a href="#" class="outline-btn project__btn">View project</a>
+      <div class="w-projects__content">
+        <div class="project" data-tab="construction">
+          <img loading="lazy" src="./img/tab--cubes.jpg" alt="Cubes building" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Cubes building</h6>
+            <p class="project__description">Buiseness centers</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
         </div>
+
+        <div class="project" data-tab="development">
+          <img loading="lazy" src="./img/tab--cottage.jpg" alt="Modern Cottage" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Modern Cottage</h6>
+            <p class="project__description">Private houses</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="development">
+          <img loading="lazy" src="./img/tab--house.jpg" alt="Luxury Beach House" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Luxury Beach House</h6>
+            <p class="project__description">Private houses</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="repairs">
+          <img loading="lazy" src="./img/tab--bedroom.jpg" alt="Modern Double Bedroom" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Modern Double Bedroom</h6>
+            <p class="project__description">Appartments & flats</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="repairs">
+          <img loading="lazy" src="./img/tab--kids-bedroom.jpg" alt="Kids Bedroom With Decorations"
+            class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Kids Bedroom With Decorations</h6>
+            <p class="project__description">Appartments & flats</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="construction">
+          <img loading="lazy" src="./img/project--pencil.jpg" alt="The Pencil building" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">The Pencil building</h6>
+            <p class="project__description">Stores & Malls</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="construction">
+          <img loading="lazy" src="./img/project--red-finger.jpg" alt="Red finger building" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Red Finger Building</h6>
+            <p class="project__description">Buiseness centers</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="interior">
+          <img loading="lazy" src="./img/tab--interior.jpg" alt="Scandinavian Style Interior" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Scandinavian Style Interior</h6>
+            <p class="project__description">Private houses</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="development">
+          <img loading="lazy" src="./img/tab--house2.jpg" alt="Brown and Gray Painted House" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Brown and Gray Painted House</h6>
+            <p class="project__description">Private houses</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="development">
+          <img loading="lazy" src="./img/tab--cottage.jpg" alt="Modern Cottage" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Modern Cottage</h6>
+            <p class="project__description">Private houses</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="development">
+          <img loading="lazy" src="./img/tab--house.jpg" alt="Luxury Beach House" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Luxury Beach House</h6>
+            <p class="project__description">Private houses</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="repairs">
+          <img loading="lazy" src="./img/tab--bedroom.jpg" alt="Modern Double Bedroom" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Modern Double Bedroom</h6>
+            <p class="project__description">Appartments & flats</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="development">
+          <img loading="lazy" src="./img/tab--cottage.jpg" alt="Modern Cottage" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Modern Cottage</h6>
+            <p class="project__description">Private houses</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
+        <div class="project" data-tab="development">
+          <img loading="lazy" src="./img/tab--house.jpg" alt="Luxury Beach House" class="project__img">
+          <div class="project__info">
+            <h6 class="project__title">Luxury Beach House</h6>
+            <p class="project__description">Private houses</p>
+            <a href="#" class="outline-btn project__btn">View project</a>
+          </div>
+        </div>
+
       </div>
+
+      <button class="w-projects__btn-more"><svg class="w-projects__btn-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M2.09961 2C2.65189 2 3.09961 2.44772 3.09961 3V7.43632C4.75764 4.20928 8.11959 2 11.9996 2C16.3552 2 20.058 4.78413 21.4303 8.66675C21.6144 9.18747 21.3414 9.75879 20.8207 9.94284C20.3 10.1269 19.7287 9.85396 19.5446 9.33325C18.4459 6.22472 15.4813 4 11.9996 4C9.03957 4 6.45326 5.60799 5.06955 8H8.09957C8.65186 8 9.09957 8.44772 9.09957 9C9.09957 9.55228 8.65186 10 8.09957 10H2.09961C1.54732 10 1.09961 9.55228 1.09961 9V3C1.09961 2.44772 1.54732 2 2.09961 2Z"
+            fill="#424551" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M3.17664 14.0572C3.69736 13.8731 4.26868 14.146 4.45273 14.6668C5.55144 17.7753 8.51608 20 11.9978 20C14.9578 20 17.5441 18.392 18.9278 16H15.8978C15.3455 16 14.8978 15.5523 14.8978 15C14.8978 14.4477 15.3455 14 15.8978 14H21.8977C22.45 14 22.8977 14.4477 22.8977 15V21C22.8977 21.5523 22.45 22 21.8977 22C21.3455 22 20.8977 21.5523 20.8977 21V16.5637C19.2397 19.7907 15.8778 22 11.9978 22C7.64215 22 3.93936 19.2159 2.56705 15.3332C2.383 14.8125 2.65593 14.2412 3.17664 14.0572Z"
+            fill="#424551" />
+        </svg>Load more</button>
     </div>
   </main>
 
@@ -193,7 +324,7 @@
       <div class="footer__main">
         <div class="footer__head">
           <a href="#" class="footer__logo">
-            <img src="./img/footer--logo.png" alt="Logo">
+            <img loading="lazy" src="./img/footer--logo.png" alt="Logo">
           </a>
           <ul class="footer__social">
             <li><a href="#" class="footer__icon footer__icon--whatsapp"></a></li>
@@ -257,6 +388,7 @@
         </svg> by Createx Studio</p>
     </div>
   </footer>
+  <script src="./js/work.js"></script>
 </body>
 
 </html>

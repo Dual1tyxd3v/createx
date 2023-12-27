@@ -1108,6 +1108,7 @@ img {
 
 .w-projects {
   margin-top: -6rem;
+  padding-bottom: 10rem;
 }
 .w-projects__tabs {
   display: flex;
@@ -1147,5 +1148,34 @@ img {
   width: 4.8rem;
   height: 4.8rem;
   margin-bottom: 1.6rem;
+}
+.w-projects__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+.w-projects__btn-more {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 160%;
+  color: #424551;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 6rem auto 0;
+}
+.w-projects__btn-more:hover {
+  color: #ff5a30;
+}
+.w-projects__btn-more:hover path {
+  fill: #ff5a30;
+}
+.w-projects__btn-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.6rem;
 }
 /*# sourceMappingURL=style.css.map */

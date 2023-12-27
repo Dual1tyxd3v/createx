@@ -1,5 +1,6 @@
 .w-projects {
   margin-top: -6rem;
+  padding-bottom: 10rem;
 
   &__tabs {
     display: flex;
@@ -48,5 +49,39 @@
     width: 4.8rem;
     height: 4.8rem;
     margin-bottom: 1.6rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  &__btn-more {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 160%;
+    color: #424551;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 6rem auto 0;
+
+    &:hover {
+      color: $color-active;
+
+      & path {
+        fill: $color-active;
+      }
+    }
+  }
+
+  &__btn-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.6rem;
   }
 }
