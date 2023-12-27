@@ -1208,4 +1208,117 @@ img {
 .w-clients__list {
   margin-bottom: 0;
 }
+
+.stats {
+  padding-top: 13rem;
+}
+.stats__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  margin-bottom: 12rem;
+}
+.stats__item {
+  width: 25.6rem;
+}
+.stats__title {
+  font-size: 4.6rem;
+  line-height: 130%;
+  font-weight: 700;
+  color: #ff5a30;
+  margin-bottom: 0.8rem;
+}
+.stats__title sup {
+  line-height: 100%;
+}
+.stats__title::before {
+  content: "";
+  display: block;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-position: center center;
+  background-size: 4.8rem 4.8rem;
+  margin: 0 auto 2rem;
+}
+.stats__title--finger::before {
+  background-image: url(../img/stats--finger.svg);
+}
+.stats__title--painting::before {
+  background-image: url(../img/stats--painting.svg);
+}
+.stats__title--helmet::before {
+  background-image: url(../img/stats--helmet.svg);
+}
+.stats__title--pantone::before {
+  background-image: url(../img/stats--pantone.svg);
+}
+.stats__info {
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #1e212c;
+}
+.stats__ceo {
+  position: relative;
+  padding-top: 12rem;
+}
+.stats__img {
+  width: 42.68%;
+}
+.stats__blockquotes {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 59.75%;
+  z-index: 3;
+  padding: 8rem 10.5rem 8rem 13.5rem;
+  border-radius: 4px;
+  background: var(--white, #fff);
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+.stats__text-container {
+  margin-bottom: 5.1rem;
+}
+.stats__text {
+  font-size: 2rem;
+  line-height: 150%;
+  color: #1e212c;
+  font-weight: 700;
+  position: relative;
+}
+.stats__text:first-child {
+  margin-bottom: 3rem;
+}
+.stats__text:first-child::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -5.8rem;
+  width: 2.8rem;
+  height: 2rem;
+  background-image: url(../img/stats--braces.svg);
+}
+.stats__person {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.stats__name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 160%;
+  color: #1e212c;
+  margin-bottom: 0.4rem;
+}
+.stats__job {
+  color: #787a89;
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+.stats__sign {
+  width: 10rem;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
 /*# sourceMappingURL=style.css.map */
