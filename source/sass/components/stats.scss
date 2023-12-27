@@ -1,5 +1,8 @@
 .stats {
-  padding-top: 13rem;
+  padding: 13rem 0 12rem;
+  background-image: url(../img/stats--bg.png);
+  background-position-x: right;
+  background-position-y: 47rem;
 
   &__list {
     display: flex;

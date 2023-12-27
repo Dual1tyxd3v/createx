@@ -1,0 +1,53 @@
+.history {
+  padding: 8rem 0 10rem;
+  text-align: center;
+  background-color: #f4f5f6;
+
+  &__cards {
+    margin-bottom: 18rem;
+  }
+
+  &__content {
+    text-align: left;
+  }
+
+  &__left {
+    & li {
+      background-image: linear-gradient(
+        to bottom,
+        #9a9ca5,
+        #9a9ca5 1.3rem,
+        transparent 1.3rem,
+        transparent 2.5rem,
+        #9a9ca5 2.5rem
+      );
+      background-size: 1px 100%;
+      padding-left: 3.2rem;
+
+      &:not(:last-child) {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  &__tab {
+    font-size: 2.8rem;
+    line-height: 150%;
+    color: #9a9ca5;
+    font-weight: 700;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      display: block;
+      width: .8rem;
+      height: .8rem;
+      border-radius: 50%;
+      background-color: #9A9CA5;
+      position: absolute;
+      left: -3.5rem;
+      top: 1.5rem;
+    }
+  }
+}
