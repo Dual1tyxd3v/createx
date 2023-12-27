@@ -1191,4 +1191,17 @@ img {
     transform: rotate(-360deg);
   }
 }
+.w-clients {
+  background-color: #f4f5f6;
+  padding-top: 8rem;
+}
+.w-clients__additional {
+  padding: 18rem 0 10rem;
+  margin-top: -6rem;
+  background-color: #fff;
+  text-align: center;
+}
+.w-clients__list {
+  margin-bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */
