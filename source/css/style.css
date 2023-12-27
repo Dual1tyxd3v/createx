@@ -1033,4 +1033,35 @@ img {
 .footer__copyright-icon {
   margin: 0 0.4rem;
 }
+
+.subsection {
+  background-image: url(../img/s-services--bg.png);
+  background-color: #f4f5f6;
+  background-position-x: right;
+  padding: 15.2rem 0 18rem;
+  margin-top: -9.2rem;
+}
+.subsection__container {
+  max-width: 60rem;
+}
+.subsection__pagination {
+  font-size: 1.4rem;
+  line-height: 150%;
+  margin-bottom: 4rem;
+}
+.subsection__pagination--light {
+  color: #9A9CA5;
+}
+.subsection__title {
+  font-size: 7.2rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 2.4rem;
+  text-transform: uppercase;
+}
+.subsection__description {
+  font-size: 2rem;
+  line-height: 150%;
+  color: #787A80;
+}
 /*# sourceMappingURL=style.css.map */
