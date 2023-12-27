@@ -1047,6 +1047,9 @@ img {
 .subsection--work {
   background-image: url(../img/subsection-work--bg.png);
 }
+.subsection--about {
+  background-image: url(../img/about--bg.png);
+}
 .subsection__container {
   max-width: 60rem;
 }
