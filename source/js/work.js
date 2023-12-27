@@ -24,7 +24,10 @@ tabsContainer.addEventListener('click', (e) => {
 });
 
 function limitCards() {
-  [...cards].slice(CURRENT_CARDS).forEach(card => card.style.display = 'none');
+  // [...cards].slice(CURRENT_CARDS).forEach(card => card.style.display = 'none');
+  cards.forEach((card, i) => {
+    card.style.display = i < CURRENT_CARDS ? 'block' : 'none';
+  })
   if (cards.length <= CURRENT_CARDS) btnLoadMore.style.display = 'none';
 }
 limitCards();

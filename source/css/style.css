@@ -1173,9 +1173,22 @@ img {
 .w-projects__btn-more:hover path {
   fill: #ff5a30;
 }
+.w-projects__btn-more:hover .w-projects__btn-icon {
+  animation: spinner 1s;
+  animation-iteration-count: infinite;
+}
 .w-projects__btn-icon {
   width: 2.4rem;
   height: 2.4rem;
   margin-right: 1.6rem;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
