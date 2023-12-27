@@ -1035,11 +1035,16 @@ img {
 }
 
 .subsection {
-  background-image: url(../img/subsection-services--bg.png);
   background-color: #f4f5f6;
   background-position-x: right;
   padding: 15.2rem 0 18rem;
   margin-top: -9.2rem;
+}
+.subsection--services {
+  background-image: url(../img/subsection-services--bg.png);
+}
+.subsection--work {
+  background-image: url(../img/subsection-work--bg.png);
 }
 .subsection__container {
   max-width: 60rem;
@@ -1099,5 +1104,48 @@ img {
   line-height: 160%;
   color: #787a80;
   margin-bottom: 4.8rem;
+}
+
+.w-projects {
+  margin-top: -6rem;
+}
+.w-projects__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 12rem;
+}
+.w-projects__tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 23rem;
+  height: 15.4rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 160%;
+  color: #9A9CA5;
+  background: #fff;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+.w-projects__tab:hover {
+  color: #000;
+}
+.w-projects__tab--active {
+  background-color: #ff5a30;
+  color: #fff;
+}
+.w-projects__tab--active path {
+  fill: #fff;
+}
+.w-projects__tab--active:hover {
+  color: #fff;
+}
+.w-projects__icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-bottom: 1.6rem;
 }
 /*# sourceMappingURL=style.css.map */

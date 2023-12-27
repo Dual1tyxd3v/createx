@@ -1,9 +1,16 @@
 .subsection {
-  background-image: url(../img/subsection-services--bg.png);
   background-color: #f4f5f6;
   background-position-x: right;
   padding: 15.2rem 0 18rem;
   margin-top: -9.2rem;
+
+  &--services {
+    background-image: url(../img/subsection-services--bg.png);
+  }
+
+  &--work {
+    background-image: url(../img/subsection-work--bg.png);
+  }
 
   &__container {
     max-width: 60rem;
