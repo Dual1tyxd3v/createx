@@ -6,6 +6,7 @@ const btnLoadMore = document.querySelector('.w-projects__btn-more');
 
 const ACTIVE_CLASS = 'w-projects__tab--active';
 let CURRENT_CARDS = 9;
+let CURRENT_CATEGORY = 'all';
 const ADDITIONAL_CARDS = 3;
 
 tabsContainer.addEventListener('click', (e) => {
@@ -17,23 +18,31 @@ tabsContainer.addEventListener('click', (e) => {
   tabsContainer.querySelector(`.${ACTIVE_CLASS}`).classList.remove(ACTIVE_CLASS);
   tab.classList.add(ACTIVE_CLASS);
 
-  const anchor = tab.dataset.tab;
-  [...cards].slice(0, CURRENT_CARDS).forEach(card => {
-    card.style.display = card.dataset.tab === anchor || anchor === 'all' ? 'block' : 'none';
-  });
+  CURRENT_CATEGORY = tab.dataset.tab;
+
+  const filteredCards = [];
+  cards.forEach(card => {
+    if (card.dataset.tab === CURRENT_CATEGORY || CURRENT_CATEGORY === 'all') {
+      filteredCards.push(card);
+    }
+    card.style.display = 'none';
+  })
+  limitCards(filteredCards);
 });
 
-function limitCards() {
-  // [...cards].slice(CURRENT_CARDS).forEach(card => card.style.display = 'none');
+function limitCards(cards) {
   cards.forEach((card, i) => {
     card.style.display = i < CURRENT_CARDS ? 'block' : 'none';
   })
-  if (cards.length <= CURRENT_CARDS) btnLoadMore.style.display = 'none';
+
+  btnLoadMore.style.display = cards.length <= CURRENT_CARDS ? 'none' : 'block';
 }
-limitCards();
+limitCards(cards);
 
 btnLoadMore.addEventListener('click', () => {
-  [...cards].slice(CURRENT_CARDS, CURRENT_CARDS + ADDITIONAL_CARDS).forEach(card => card.style.display = 'block');
+  const currentCollection = CURRENT_CATEGORY === 'all' ? [...cards] : [...cards].filter(card => card.dataset.tab === CURRENT_CATEGORY);
+  
+  currentCollection.slice(CURRENT_CARDS, CURRENT_CARDS + ADDITIONAL_CARDS).forEach(card => card.style.display = 'block');
   CURRENT_CARDS += ADDITIONAL_CARDS;
   if (cards.length <= CURRENT_CARDS) btnLoadMore.style.display = 'none';
 });
