@@ -40,6 +40,7 @@ a {
 img {
   width: 100%;
   height: auto;
+  vertical-align: bottom;
 }
 
 .visually-hidden {
@@ -1403,5 +1404,90 @@ img {
 }
 .a-clients__list:not(:last-child) {
   margin-bottom: 3rem;
+}
+
+.team {
+  padding: 8rem 0 12rem;
+  text-align: center;
+}
+.team__title {
+  margin-bottom: 2.4rem;
+}
+.team__description {
+  margin-bottom: 6rem;
+}
+.team__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 28.5rem);
+  row-gap: 6rem;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  margin-bottom: 8rem;
+}
+.team__card {
+  width: 28.5rem;
+}
+.team__card:hover .team__social {
+  transform: translateY(0);
+}
+.team__img {
+  margin-bottom: 1.6rem;
+  position: relative;
+  overflow: hidden;
+}
+.team__img img {
+  border-radius: 4px;
+}
+.team__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  background-color: rgba(255, 90, 48, 0.7);
+  padding: 2rem 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(100%);
+}
+.team__link {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem;
+  background-position: center;
+}
+.team__link:hover {
+  transform: scale(1.2);
+}
+.team__link--linked {
+  background-image: url(../img/team--linked.svg);
+}
+.team__link--twitter {
+  background-image: url(../img/team--twitter.svg);
+}
+.team__link--facebook {
+  background-image: url(../img/team--facebook.svg);
+}
+.team__name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 0.4rem;
+}
+.team__info {
+  font-size: 1.6rem;
+  line-height: 160%;
+  color: #787a80;
+}
+.team__offer {
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #1E212C;
+}
+.team__offer--link {
+  color: #ff5a30;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
