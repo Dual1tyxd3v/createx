@@ -51,11 +51,25 @@ class Slider {
   }
 
   _createCounter() {
-    const { container, template, className } = this.sliderCounter;
+    const { container, template, className, values, triggerClass } = this.sliderCounter;
 
     for (let i = 0; i <= this.slidesCount; i++) {
-      container.innerHTML += template.replace('_X_', (i + 1).toString().padStart(2, '0'));
+      container.innerHTML += template.replace('_X_', values ? values[i] : (i + 1).toString().padStart(2, '0'));
     }
     container.children[0].classList.add(className);
+
+    if (!triggerClass) return;
+
+    container.addEventListener('click', (e) => this._changeSlideWithCounter(e, triggerClass));
+  }
+
+  _changeSlideWithCounter(e, triggerClass) {
+    e.preventDefault();
+    if (!e.target.classList.contains(triggerClass)) return;
+
+    const tab = e.target;
+    const index = this.sliderCounter.values.indexOf(tab.textContent);
+    this.currentSlide = index;
+    this._changeSlide(0, true)
   }
 }
