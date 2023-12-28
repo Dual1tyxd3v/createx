@@ -128,6 +128,9 @@ img {
 .header {
   padding: 2.2rem 0;
 }
+.header--grey {
+  background-color: #f4f5f6;
+}
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -1050,6 +1053,11 @@ img {
 }
 .subsection--about {
   background-image: url(../img/about--bg.png);
+}
+.subsection--available {
+  background-image: url(../img/available--bg.png);
+  background-position-y: bottom;
+  margin-top: -5.2rem;
 }
 .subsection__container {
   max-width: 60rem;

@@ -1,5 +1,10 @@
 .header {
   padding: 2.2rem 0;
+
+  &--grey {
+    background-color: #f4f5f6;
+  }
+
   &__wrapper {
     display: flex;
     align-items: center;

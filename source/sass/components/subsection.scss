@@ -16,6 +16,12 @@
     background-image: url(../img/about--bg.png);
   }
 
+  &--available {
+    background-image: url(../img/available--bg.png);
+    background-position-y: bottom;
+    margin-top: -5.2rem;
+  }
+
   &__container {
     max-width: 60rem;
   }
