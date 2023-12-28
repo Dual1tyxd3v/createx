@@ -485,6 +485,7 @@ img {
 }
 .form__title--vertical {
   margin-bottom: 2.4rem;
+  text-align: center;
 }
 .form__form {
   display: flex;
@@ -511,14 +512,35 @@ img {
   margin-bottom: 2rem;
 }
 .form__field--vertical:last-child {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 .form__label {
   font-size: 1.4rem;
   line-height: 2.1rem;
   margin-bottom: 0.8rem;
 }
-.form__input, .form__textarea {
+.form__label--active {
+  color: #ff5a30;
+}
+.form__label--file {
+  display: flex;
+  align-items: center;
+}
+.form__label--file::before {
+  content: "";
+  width: 2.6rem;
+  height: 2.6rem;
+  display: block;
+  margin-right: 1.2rem;
+  background-image: url(../img/form--file.svg);
+}
+.form__textarea {
+  height: 8.6rem;
+}
+.form__file {
+  display: none;
+}
+.form__input, .form__textarea, .form__select {
   padding: 1.2rem 1.6rem;
   font-size: 1.4rem;
   line-height: 2.1rem;
@@ -529,19 +551,19 @@ img {
   resize: none;
   transition: all 0s;
 }
-.form__input:focus, .form__textarea:focus {
+.form__input:focus, .form__textarea:focus, .form__select:focus {
   outline: 2px solid #ff5a30;
 }
-.form__input::-moz-placeholder, .form__textarea::-moz-placeholder {
+.form__input::-moz-placeholder, .form__textarea::-moz-placeholder, .form__select::-moz-placeholder {
   color: #9a9ca5;
 }
-.form__input::placeholder, .form__textarea::placeholder {
+.form__input::placeholder, .form__textarea::placeholder, .form__select::placeholder {
   color: #9a9ca5;
 }
-.form__input--long, .form__textarea--long {
+.form__input--long, .form__textarea--long, .form__select--long {
   width: 41.4rem;
 }
-.form__input--full, .form__textarea--full {
+.form__input--full, .form__textarea--full, .form__select--full {
   width: 100%;
 }
 .form__checkbox {

@@ -126,7 +126,7 @@
         </p>
         <div class="available__btns">
           <button class="outline-btn js-subscribe">Subscribe</button>
-          <button class="button button--border">Send cv</button>
+          <button class="button button--border js-sendCV">Send cv</button>
         </div>
       </div>
     </div>
@@ -269,7 +269,7 @@
     </div>
   </footer>
 
-  <div class="modal">
+  <div class="modal hide">
     <div class="modal__content">
       <button class="btn-close"></button>
       <div class="modal__container">
@@ -278,22 +278,59 @@
     </div>
   </div>
 
-  <div class="modal__subscribe hide" data-modal="subscribe">
+  <div class="modal__subscribe hide">
     <h4 class="form__title form__title--vertical">Subscribe to our newsletter</h4>
-  <form action="#" class="form__form form__form--vertical">
-    <div class="form__field form__field--vertical">
-      <label class="form__label" for="name">Name*</label>
-      <input class="form__input form__input--full" type="text" name="name" id="name" placeholder="Your name">
-    </div>
-    <div class="form__field form__field--vertical">
-      <label class="form__label" for="email">Email*</label>
-      <input class="form__input form__input--full" type="text" name="email" id="email"
-        placeholder="Your working email">
-    </div>
-    <div class="form__field form__field--vertical">
-      <input type="submit" value="Send" class="button">
-    </div>
-  </form>
+    <form action="#" class="form__form form__form--vertical">
+      <div class="form__field form__field--vertical">
+        <label class="form__label" for="name">Name*</label>
+        <input class="form__input form__input--full" type="text" name="name" id="name" placeholder="Your name">
+      </div>
+      <div class="form__field form__field--vertical">
+        <label class="form__label" for="email">Email*</label>
+        <input class="form__input form__input--full" type="text" name="email" id="email"
+          placeholder="Your working email">
+      </div>
+      <div class="form__field form__field--vertical">
+        <input type="submit" value="Send" class="button">
+      </div>
+    </form>
+  </div>
+
+  <div class="modal__cv hide">
+    <h4 class="form__title form__title--vertical">Send your CV</h4>
+    <form action="#" class="form__form form__form--vertical">
+      <div class="form__field form__field--vertical">
+        <label class="form__label" for="name2">Name*</label>
+        <input class="form__input form__input--full" type="text" name="name" id="name2" placeholder="Your name">
+      </div>
+      <div class="form__field form__field--vertical">
+        <label class="form__label" for="location">Location*</label>
+        <select class="form__select form__select--full" placeholder="choose" name="location" id="location">
+          <option class="form__option" value="" selected disabled hidden>Choose your location</option>
+          <option class="form__option" value="new_york">New York</option>
+          <option class="form__option" value="san_francisco">San Francisco</option>
+        </select>
+      </div>
+      <div class="form__field form__field--vertical">
+        <label class="form__label" for="phone2">Phone*</label>
+        <input class="form__input form__input--full" type="text" name="phone" id="phone2" placeholder="Your phone number">
+      </div>
+      <div class="form__field form__field--vertical">
+        <label class="form__label" for="email2">Email*</label>
+        <input class="form__input form__input--full xx" type="text" name="email" id="email2" placeholder="Your working email">
+      </div>
+      <div class="form__field form__field--vertical">
+        <label class="form__label" for="message2">Covering letter</label>
+        <textarea class="form__input form__input--full form__textarea" name="message" id="message2" placeholder="Your covering letter"></textarea>
+      </div>
+      <div class="form__field form__field--vertical">
+        <label class="form__label form__label--file" for="file">Attach your CV*</label>
+        <input class="form__file" type="file" name="file" id="file">
+      </div>
+      <div class="form__field form__field--vertical">
+        <input type="submit" value="Send" class="button">
+      </div>
+    </form>
   </div>
   <script src="./js/available.js"></script>
 </body>

@@ -17,6 +17,7 @@
 
     &--vertical {
       margin-bottom: 2.4rem;
+      text-align: center;
     }
   }
 
@@ -49,7 +50,7 @@
       }
 
       &:last-child {
-        margin-top: 4rem;
+        margin-top: 2rem;
       }
     }
   }
@@ -58,10 +59,37 @@
     font-size: 1.4rem;
     line-height: 2.1rem;
     margin-bottom: 0.8rem;
+
+    &--active {
+      color: $color-active;
+    }
+
+    &--file {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        width: 2.6rem;
+        height: 2.6rem;
+        display: block;
+        margin-right: 1.2rem;
+        background-image: url(../img/form--file.svg)
+      }
+    }
+  }
+
+  &__textarea {
+    height: 8.6rem;
+  }
+
+  &__file {
+    display: none;
   }
 
   &__input,
-  &__textarea {
+  &__textarea,
+  &__select {
     padding: 1.2rem 1.6rem;
     font-size: 1.4rem;
     line-height: 2.1rem;
