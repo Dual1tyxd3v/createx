@@ -1490,4 +1490,16 @@ img {
   color: #ff5a30;
   text-decoration: underline;
 }
+
+.worldwide {
+  background-color: #f4f5f6;
+  text-align: center;
+  padding: 8rem 12rem;
+}
+.worldwide__img {
+  width: 100%;
+}
+.worldwide__title {
+  margin-bottom: 6rem;
+}
 /*# sourceMappingURL=style.css.map */
