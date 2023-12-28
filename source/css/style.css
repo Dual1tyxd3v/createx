@@ -1394,4 +1394,14 @@ img {
 .history__slider-wrapper {
   display: flex;
 }
+
+.a-clients {
+  padding-top: 12rem;
+}
+.a-clients__title {
+  margin-bottom: 2.4rem;
+}
+.a-clients__list:not(:last-child) {
+  margin-bottom: 3rem;
+}
 /*# sourceMappingURL=style.css.map */

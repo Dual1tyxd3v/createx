@@ -1,0 +1,11 @@
+.a-clients {
+  padding-top: 12rem;
+
+  &__title {
+    margin-bottom: 2.4rem;
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
