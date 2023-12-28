@@ -424,6 +424,15 @@ img {
 .card__title--comfort::before {
   background-image: url(../img/core--comfort.svg);
 }
+.card__title--training::before {
+  background-image: url(../img/core--training.svg);
+}
+.card__title--prof::before {
+  background-image: url(../img/core--prof.svg);
+}
+.card__title--growing::before {
+  background-image: url(../img/core--growing.svg);
+}
 
 .form {
   box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
@@ -1593,5 +1602,14 @@ img {
 .available__btns {
   display: flex;
   gap: 3rem;
+}
+
+.benefits {
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 18rem;
+}
+.benefits .core__cards {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

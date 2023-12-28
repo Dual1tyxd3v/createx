@@ -33,5 +33,17 @@
     &--comfort::before {
       background-image: url(../img/core--comfort.svg);
     }
+
+    &--training::before {
+      background-image: url(../img/core--training.svg);
+    }
+
+    &--prof::before {
+      background-image: url(../img/core--prof.svg);
+    }
+
+    &--growing::before {
+      background-image: url(../img/core--growing.svg);
+    }
   }
 }
