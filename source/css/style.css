@@ -89,6 +89,9 @@ img {
   font-size: 1.6rem;
   padding: 1.8rem 4rem;
 }
+.button--border {
+  border: 1px solid #ff5a30;
+}
 
 .slider-btn {
   width: 4.8rem;
@@ -1509,5 +1512,86 @@ img {
 }
 .worldwide__title {
   margin-bottom: 6rem;
+}
+
+.available {
+  padding: 12rem 0;
+}
+.available__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.available__card {
+  border-radius: 4px;
+  border: 1px solid #e5e8ed;
+  width: 70.5rem;
+  padding: 3.2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.available__card:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+.available__card:hover {
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+  transform: translateY(-2px);
+}
+.available__conditions {
+  display: flex;
+  margin-bottom: 0.8rem;
+}
+.available__condition {
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #787a80;
+  display: flex;
+  align-items: center;
+}
+.available__condition--place::before {
+  background-image: url(../img/available--pin.svg);
+}
+.available__condition--time::before {
+  background-image: url(../img/available--clock.svg);
+}
+.available__condition::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background-position: center;
+  margin-right: 0.8rem;
+}
+.available__condition:not(:last-child) {
+  margin-right: 1.2rem;
+  background-image: linear-gradient(to bottom, #787a80, #787a80 12px);
+  background-size: 0.1rem 1.2rem;
+  background-position: right center;
+  padding-right: 1.2rem;
+}
+.available__name {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: #1e212c;
+}
+.available__subscribe {
+  width: 38rem;
+}
+.available__sub-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: #1E212C;
+  margin-bottom: 2.4rem;
+}
+.available__sub-text {
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: #424551;
+  margin-bottom: 4.8rem;
+}
+.available__btns {
+  display: flex;
+  gap: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

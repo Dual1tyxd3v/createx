@@ -18,6 +18,10 @@
     font-size: 1.6rem;
     padding: 1.8rem 4rem;
   }
+
+  &--border {
+    border: 1px solid $color-active;
+  }
 }
 
 .slider-btn {
