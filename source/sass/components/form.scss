@@ -14,12 +14,21 @@
     font-size: 2.8rem;
     line-height: 4.2rem;
     margin-bottom: 3.2rem;
+
+    &--vertical {
+      margin-bottom: 2.4rem;
+    }
   }
 
   &__form {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+
+    &--vertical {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__field {
@@ -29,6 +38,19 @@
 
     &:not(:last-child) {
       margin-right: 2.4rem;
+    }
+
+    &--vertical {
+      margin-right: 0 !important;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &:last-child {
+        margin-top: 4rem;
+      }
     }
   }
 
@@ -60,6 +82,10 @@
 
     &--long {
       width: 41.4rem;
+    }
+
+    &--full {
+      width: 100%;
     }
   }
 

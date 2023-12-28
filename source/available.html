@@ -125,7 +125,7 @@
           Send your CV or subscribe to our newsletter to receive information about new vacancies.
         </p>
         <div class="available__btns">
-          <button class="outline-btn">Subscribe</button>
+          <button class="outline-btn js-subscribe">Subscribe</button>
           <button class="button button--border">Send cv</button>
         </div>
       </div>
@@ -268,6 +268,34 @@
         </svg> by Createx Studio</p>
     </div>
   </footer>
+
+  <div class="modal">
+    <div class="modal__content">
+      <button class="btn-close"></button>
+      <div class="modal__container">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__subscribe hide" data-modal="subscribe">
+    <h4 class="form__title form__title--vertical">Subscribe to our newsletter</h4>
+  <form action="#" class="form__form form__form--vertical">
+    <div class="form__field form__field--vertical">
+      <label class="form__label" for="name">Name*</label>
+      <input class="form__input form__input--full" type="text" name="name" id="name" placeholder="Your name">
+    </div>
+    <div class="form__field form__field--vertical">
+      <label class="form__label" for="email">Email*</label>
+      <input class="form__input form__input--full" type="text" name="email" id="email"
+        placeholder="Your working email">
+    </div>
+    <div class="form__field form__field--vertical">
+      <input type="submit" value="Send" class="button">
+    </div>
+  </form>
+  </div>
+  <script src="./js/available.js"></script>
 </body>
 
 </html>

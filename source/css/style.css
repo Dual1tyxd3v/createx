@@ -54,6 +54,10 @@ img {
   clip: rect(0, 0, 0, 0);
 }
 
+.hide {
+  display: none !important;
+}
+
 .wrapper {
   width: 123rem;
   margin: 0 auto;
@@ -121,6 +125,37 @@ img {
 .outline-btn:hover {
   background-color: #ff5a30;
   color: #fff;
+}
+
+.btn-close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  height: 2.4rem;
+  width: 2.4rem;
+  top: 2.4rem;
+  right: 2.4rem;
+  cursor: pointer;
+}
+.btn-close:hover::after, .btn-close:hover::before {
+  background-color: #ff5a30;
+}
+.btn-close::after, .btn-close::before {
+  content: "";
+  border-radius: 0.1rem;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.15rem;
+  background-color: #787a80;
+  top: 50%;
+  left: 0;
+}
+.btn-close::after {
+  transform: rotate(45deg);
+}
+.btn-close::before {
+  transform: rotate(-45deg);
 }
 
 .logo {
@@ -448,10 +483,17 @@ img {
   line-height: 4.2rem;
   margin-bottom: 3.2rem;
 }
+.form__title--vertical {
+  margin-bottom: 2.4rem;
+}
 .form__form {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+}
+.form__form--vertical {
+  flex-direction: column;
+  align-items: center;
 }
 .form__field {
   display: flex;
@@ -460,6 +502,16 @@ img {
 }
 .form__field:not(:last-child) {
   margin-right: 2.4rem;
+}
+.form__field--vertical {
+  margin-right: 0 !important;
+  width: 100%;
+}
+.form__field--vertical:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.form__field--vertical:last-child {
+  margin-top: 4rem;
 }
 .form__label {
   font-size: 1.4rem;
@@ -488,6 +540,9 @@ img {
 }
 .form__input--long, .form__textarea--long {
   width: 41.4rem;
+}
+.form__input--full, .form__textarea--full {
+  width: 100%;
 }
 .form__checkbox {
   display: none;
@@ -1611,5 +1666,29 @@ img {
 }
 .benefits .core__cards {
   margin-bottom: 0;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(30, 33, 44, 0.75);
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__content {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 4.8rem;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(30, 33, 44, 0.08), 0px 26px 24px -10px rgba(30, 33, 44, 0.1), 0px 60px 80px -20px rgba(30, 33, 44, 0.16);
+  border: 1px solid #e5e8ed;
+  position: relative;
+}
+.modal__container {
+  width: 39rem;
 }
 /*# sourceMappingURL=style.css.map */
