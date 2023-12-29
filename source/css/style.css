@@ -891,6 +891,13 @@ img {
 .news__big .news__info-block {
   margin-bottom: 1.6rem;
 }
+.news__mid {
+  width: 60rem;
+  margin: 0;
+}
+.news__mid .news__info-block {
+  margin-bottom: 1.6rem;
+}
 .news__small .news__item {
   margin-bottom: 3rem;
 }
@@ -911,6 +918,10 @@ img {
   font-weight: 700;
   font-size: 2rem;
   line-height: 150%;
+  display: inline-block;
+}
+.news__head:hover {
+  color: #ff5a30;
 }
 .news__head--big {
   margin-bottom: 1.2rem;
@@ -1715,5 +1726,45 @@ img {
 }
 .modal__container {
   width: 39rem;
+}
+
+.n-news {
+  padding: 12rem 0 18rem;
+}
+.n-news__title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.n-news__tabs {
+  display: flex;
+  margin-bottom: 6rem;
+}
+.n-news__tabs li {
+  width: 20.5rem;
+  text-align: center;
+}
+.n-news__tab {
+  font-size: 1.6rem;
+  line-height: 160%;
+  font-weight: 700;
+  color: #9A9CA5;
+  border-radius: 4px;
+  width: 100%;
+  display: inline-block;
+  padding: 1rem 0;
+}
+.n-news__tab:hover {
+  color: #ff5a30;
+}
+.n-news__tab--active {
+  color: #ff5a30;
+  border: 1px solid #ff5a30;
+}
+.n-news__content {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+  row-gap: 6rem;
 }
 /*# sourceMappingURL=style.css.map */

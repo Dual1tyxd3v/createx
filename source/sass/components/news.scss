@@ -25,6 +25,15 @@
     }
   }
 
+  &__mid {
+    width: 60rem;
+    margin: 0;
+
+    & .news__info-block {
+      margin-bottom: 1.6rem;
+    }
+  }
+
   &__small .news__item {
     margin-bottom: 3rem;
   }
@@ -53,6 +62,11 @@
     font-weight: 700;
     font-size: 2rem;
     line-height: 150%;
+    display: inline-block;
+
+    &:hover {
+      color: $color-active;
+    }
 
     &--big {
       margin-bottom: 1.2rem;
