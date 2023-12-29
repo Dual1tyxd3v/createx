@@ -34,7 +34,6 @@ function limitCards(cards) {
 function renderNavigation(cardsLength, cardsPerPage) {
   navigation.style.display = 'flex';
   navigation.innerHTML = '';
-  console.log('render nav')
 
   const pages = Math.ceil(cardsLength / cardsPerPage);
   for (let i = 0; i < pages; i++) {
@@ -51,3 +50,26 @@ function renderNavigation(cardsLength, cardsPerPage) {
 }
 
 limitCards(cards);
+
+navigation.addEventListener('click', (e) => {
+  e.preventDefault();
+
+    const page = e.target.closest('.n-news__nav')?.textContent;
+    if (!page) return;
+
+    switch (page) {
+      case '←': {
+        CURRENT_PAGE--;
+      }
+        break;
+      case '→': {
+        CURRENT_PAGE++;
+      }
+        break;
+      default: {
+        CURRENT_PAGE = +page;
+      }
+    }
+
+    limitCards(tab.filteredCards);
+})

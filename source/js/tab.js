@@ -10,10 +10,10 @@ class Tab {
 
     tabsContainer.addEventListener('click', (e) => this._changeTab(e));
 
-    if (paginationContainer) {
+    /* if (paginationContainer) {
       this.paginationContainer = paginationContainer;
       this.paginationContainer.addEventListener('click', (e) => this._pagination(e));
-    }
+    } */
   }
 
   _changeTab(e) {
@@ -40,26 +40,6 @@ class Tab {
   }
 
   _pagination(e) {
-    e.preventDefault();
 
-    const page = e.target.closest('.n-news__nav').textContent;
-    if (!page) return;
-
-    switch (page) {
-      case '←': {
-        CURRENT_PAGE--;
-      }
-        break;
-      case '→': {
-        CURRENT_PAGE++;
-      }
-        break;
-      default: {
-        CURRENT_PAGE = +page;
-      }
-    }
-    console.log(CURRENT_PAGE)
-    console.log(this.filteredCards.length)
-    this.fnLimit(this.filteredCards);
   }
 }
