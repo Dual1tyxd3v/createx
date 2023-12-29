@@ -1143,6 +1143,9 @@ img {
 .subsection--about {
   background-image: url(../img/about--bg.png);
 }
+.subsection--news {
+  background-image: url(../img/news--bg.png);
+}
 .subsection--available {
   background-image: url(../img/available--bg.png);
   background-position-y: bottom;
