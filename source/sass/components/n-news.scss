@@ -19,7 +19,7 @@
     font-size: 1.6rem;
     line-height: 160%;
     font-weight: 700;
-    color: #9A9CA5;
+    color: #9a9ca5;
     border-radius: 4px;
     width: 100%;
     display: inline-block;
@@ -40,5 +40,36 @@
     flex-wrap: wrap;
     column-gap: 3rem;
     row-gap: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__nav {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 160%;
+    color: #424551;
+
+    &--arrow {
+      -webkit-text-stroke-width: thick;
+    }
+
+    &:hover {
+      border-bottom: 1px solid #424551;
+    }
+
+    &--active {
+      color: $color-active;
+
+      &:hover {
+        border: none;
+      }
+    }
   }
 }

@@ -10,7 +10,6 @@ const ADDITIONAL_CARDS = 3;
 
 const tab = new Tab({
   tabsContainer, cards,
-  currentCards: CURRENT_CARDS,
   currentCategory: CURRENT_CATEGORY,
   tabClass: 'w-projects__tab',
   activeClass: 'w-projects__tab--active',
